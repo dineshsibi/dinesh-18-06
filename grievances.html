@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grievances</title>
+    <link rel="stylesheet" href="css/grievances.css">
+   <header>
+    <img src="CFR.png" alt="Banner image not found">
+    
+      <button id="toggleButton">☰</button>
+    
+    <div id="dashboard" class="dashboard">
+      <h2>Dashboard</h2>
+      <button class="dashboard-button" id="button1">Student Grievance</button>
+      <button class="dashboard-button" id="button2">Grievance Status</button>
+      <button class="dashboard-button">Faculties</button>
+      <button class="dashboard-button">Exams</button>
+      <button class="dashboard-button">Administration</button>
+      <button class="dashboard-button">Library</button>
+    </div>
+  </header>
+
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const buttons = document.querySelectorAll(".button[data-hc-control]");
+            buttons.forEach(button => {
+                button.addEventListener("click", function () {
+                    const contentId = this.getAttribute("data-hc-control");
+                    const content = document.querySelector(`[data-hc-content="${contentId}"]`);
+                    document.querySelectorAll(".box").forEach(box => box.style.display = 'none');
+                    content.style.display = 'block';
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">Instruction And Documents Requirement For Grievance</div>
+
+        <button type="button" class="button is-primary is-fullwidth is-medium" data-hc-control="content01">
+            Course Completion Certificate
+        </button>
+        <div data-hc-content="content01" class="box">
+            <p align="justify"><b>> Upload your admission card. (If you are not having, please contact the Directorate of Distance Education) </b></p>
+            <p align="justify"><b>> Upload all your tuition fees paid receipts / challans. </b></p><br>
+            <center><a href="newpage.php" target="_blank"><button type="button" class="button is-info is-medium">Click Here to Register your Grievance</button></a></center>
+        </div>
+
+        <button type="button" class="button is-primary is-fullwidth is-medium" data-hc-control="content02">
+            Provisional Certificate
+        </button>
+        <div data-hc-content="content02" class="box">
+            <p align="justify"><b>> Upload your filled  in application  together with the Fee Receipt and Xerox copies of Course Completion Certificate / Transfer Certificate and Final Mark Statement.</b></p>
+            <p align="justify"><b>> Provisional Certificate will not be issued to candidates who have already obtained the Degree (Convocation) Certificate.</b></p>
+            <p align="justify"><b>> Duplicate provisional certificate will not be issued on any account.</b></p>
+            <p align="justify"><b>> Provisional Certificates will be issued only for current year students.</b></p>
+            <p align="justify"><b>> The prescribed fee for obtaining Provisional certificates for all courses except Ph.D., is Rs.360/-</b></p>
+            <p align="justify"><b><span style="color:red">Note:</span> If you are not having the Course Completion Certificate(CCC) and Consolidated Mark Statement (CMS) first you apply for CCC and CMS.</b></p><br>
+            <center><a href="newpage.php" target="_blank"><button type="button" class="button is-info is-medium">Click Here to Register your Grievance</button></a></center>
+        </div>
+
+        <button type="button" class="button is-primary is-fullwidth is-medium" data-hc-control="content03">
+            Consolidated Markstatement
+        </button>
+        <div data-hc-content="content03" class="box">
+            <p align="justify"><b>> Upload all your received mark statements, hall tickets / fees paid challans / receipts, result published details and course completed certificate.</b></p>
+            <p align="justify"><b><span style="color:red">Note:</span> If you are not having the course completion certificate first you apply for Course Completion Certificate (CCC).</b></p><br>
+            <center><a href="newpage.php" target="_blank"><button type="button" class="button is-info is-medium">Click Here to Register your Grievance</button></a></center>
+        </div>
+
+        <button type="button" class="button is-primary is-fullwidth is-medium" data-hc-control="content04">
+            Convocation/Degree Certificate
+        </button>
+        <div data-hc-content="content04" class="box">
+            <p align="justify"><b>> Upload your Consolidated Mark Statement, Course Completion Certificate and Provisional Certificate, click below link and apply as per the instruction.</b></p>
+            <p align="justify"><b><span style="color:red">Note:</span> If you are not having any one of these please get the certificates.</b></p><br>
+            <center><a href="newpage.php" target="_blank"><button type="button" class="button is-info is-medium">Click Here to Register your Grievance</button></a></center>
+        </div>
+
+        <button type="button" class="button is-primary is-fullwidth is-medium" data-hc-control="content05">
+            Mark Statement
+        </button>
+        <div data-hc-content="content05" class="box">
+            <p align="justify"><b>> Upload your hall ticket(s) / fees paid challans / receipts.</b></p>
+            <p align="justify"><b>> Upload your received mark statements and results published in website.</b></p>
+            <p align="justify"><b>> Mention the subject codes, center codes and other details clearly in the application.</b></p><br>
+            <center><a href="newpage.php" target="_blank"><button type="button" class="button is-info is-medium">Click Here to Register your Grievance</button></a></center>
+        </div>
+
+        <button type="button" class="button is-primary is-fullwidth is-medium" data-hc-control="content06">
+            Result
+        </button>
+        <div data-hc-content="content06" class="box">
+            <p align="justify"><b>> If you are applying to know your results upload your hall ticket(s) and fees paid challans / receipts.</b></p>
+            <p align="justify"><b>> Give all your exam written details clearly in grievance portal.</b></p><br>
+            <a href="newpage.php" target="_blank"><button type="button" class="button is-info is-medium">Click Here to Register your Grievance</button></a>
+        </div>
+    </div>
+</body>
+
+   <script src="script/grievances.js"></script>
+   <script src="script/toggle.js"></script>
+</html>

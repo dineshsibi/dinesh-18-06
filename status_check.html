@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Application Status</title>
+   
+   
+   <link rel="stylesheet" href="css/status_check.css">
+</head>
+<body>
+    <header>
+        <img src="CFR.png" alt="Banner image not found">
+        <button id="toggleButton">☰</button>
+        <div id="dashboard" class="dashboard">
+          <h2>Dashboard</h2>
+          <button class="dashboard-button" id="button1">Student Grievance</button>
+          <button class="dashboard-button" id="button2">Grievance Status</button>
+          <button class="dashboard-button">Faculties</button>
+          <button class="dashboard-button">Exams</button>
+          <button class="dashboard-button">Administration</button>
+          <button class="dashboard-button">Library</button>
+        </div>
+    </header>
+    <br><br><br><br><br><br><br><br><br><br>
+    <div class="container">
+        <h1>Check Application Status</h1>
+        <form action="check_status.php" method="post">
+            <label for="registerNumber">Register Number:</label><br>
+            <input type="text" id="registerNumber" name="registerNumber" required><br>
+            <input type="submit" value="Check Status">
+        </form>
+        <a href="home.php">Back to Home</a>
+    </div>
+
+   
+</body>
+<script src="script/toggle.js"></script>
+</html>
