@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: url('nn.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header img {
+    width: 100%;
+}
+
+button#toggleButton {
+background-color: #003366;
+color: white;
+padding: 10px 20px;
+border: none;
+cursor: pointer;
+font-size: 16px;
+border-radius: 5px;
+}
+
+button#toggleButton:hover {
+background-color: #00509E;
+}
+
+.dashboard {
+    width: 250px;
+    background-color: rgba(17, 98, 179, 0.8);
+    color: #ffffff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(88, 240, 146, 0.5);
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+.dashboard.open {
+    display: block;
+}
+
+.dashboard h2 {
+    margin-top: 0;
+}
+
+.dashboard-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: rgba(192, 186, 241, 0.9);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.dashboard-button:hover {
+    background-color: #71eb8c;
+}
+
+.container {
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    position: relative;
+    top: 100px;
+}
+
+input[type="text"], input[type="submit"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}

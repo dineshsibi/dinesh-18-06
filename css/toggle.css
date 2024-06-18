@@ -1,0 +1,70 @@
+
+ 
+  header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(192, 186, 241, 0.9);
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  button#toggleButton {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  button#toggleButton:hover {
+    background-color: #00509E;
+  }
+  
+  .dashboard {
+    position: fixed;
+    top:250px; /* Adjusted to start below the header */
+    left: 0;
+    width: 250px;
+    background-color: rgba(17, 98, 179, 0.8); /* Semi-transparent background */
+    color: #ffffff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(88, 240, 146, 0.5);
+    display: none; /* Hidden by default */
+    z-index: 1000; /* Ensure it's above other elements */
+  }
+  
+  .dashboard.open {
+    display: block; /* Show when toggled */
+  }
+  
+  .dashboard h2 {
+    margin-top: 0;
+    border-radius: 5px;
+  }
+  
+  .dashboard-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 0 0 10px 0;
+    background-color: rgba(192, 186, 241, 0.9);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .dashboard-button:hover {
+    background-color: #71eb8c;
+  }
+  

@@ -1,0 +1,147 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('nn.png') no-repeat center center fixed;
+    background-size: cover;
+
+    
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+position: sticky;
+width: 100%;
+top: 0;
+z-index: 1000;
+}
+
+header img {
+width: 100%;
+}
+
+
+button#toggleButton {
+background-color: #003366;
+color: white;
+padding: 10px 20px;
+border: none;
+cursor: pointer;
+font-size: 16px;
+border-radius: 5px;
+}
+
+button#toggleButton:hover {
+background-color: #00509E;
+}
+
+.dashboard {
+width: 250px;
+background-color: rgba(17, 98, 179, 0.8);
+color: #ffffff;
+padding: 20px;
+box-shadow: 2px 0 5px rgba(88, 240, 146, 0.5);
+display: none;
+position: absolute;
+top: 100%;
+left: 0;
+z-index: 1000;
+}
+
+.dashboard.open {
+display: block;
+}
+
+.dashboard h2 {
+margin-top: 0;
+}
+
+.dashboard-button {
+display: block;
+width: 100%;
+padding: 10px;
+margin: 10px 0;
+background-color: rgba(192, 186, 241, 0.9);
+color: #ffffff;
+border: none;
+cursor: pointer;
+font-size: 16px;
+border-radius: 5px;
+text-align: left;
+}
+
+.dashboard-button:hover {
+background-color: #71eb8c;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 18px;
+    color: white;
+    background-color: #4e54c8;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.button:hover {
+    background-color: #3e44a6;
+}
+
+.button.is-info {
+    background-color: #ff4081;
+}
+
+.button.is-info:hover {
+    background-color: #e6356f;
+}
+
+.box {
+    display: none;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #f9f9fb;
+    border-left: 4px solid #4e54c8;
+    border-radius: 8px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.box p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.box a button {
+    margin-top: 20px;
+}
+
+a {
+    color: #4e54c8;
+}

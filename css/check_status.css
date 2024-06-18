@@ -1,0 +1,163 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light background color */
+    background: url('nn.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    width: 100%;
+    background-color: #003366;
+    color: white;
+    position: relative;
+    padding: 10px 0;
+}
+
+header img {
+    width: 100%;
+    display: block;
+}
+
+button#toggleButton {
+background-color: #003366;
+color: white;
+padding: 10px 20px;
+border: none;
+cursor: pointer;
+font-size: 16px;
+border-radius: 5px;
+}
+
+button#toggleButton:hover {
+background-color: #00509E;
+}
+
+.dashboard {
+    width: 250px;
+    background-color: rgba(17, 98, 179, 0.8);
+    color: #ffffff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(88, 240, 146, 0.5);
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+.dashboard.open {
+    display: block;
+}
+
+.dashboard h2 {
+    margin-top: 0;
+}
+
+.dashboard-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: rgba(192, 186, 241, 0.9);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.dashboard-button:hover {
+    background-color: #71eb8c;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 100px auto 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff; /* White background for the container */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Status indicator styles (optional) */
+.status-pending {
+    color: orange;
+}
+
+.status-approved {
+    color: green;
+}
+
+.status-rejected {
+    color: red;
+}
+
+/* Link styles */
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
